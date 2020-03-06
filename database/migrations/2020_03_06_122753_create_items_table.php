@@ -17,6 +17,8 @@ class CreateItemsTable extends Migration
             $table->id();
             $table->string('name');
             $table->text('text')->nullable();
+            $table->integer('damage');
+            $table->integer('durability');
             $table->timestamps();
         });
     }
