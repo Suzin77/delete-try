@@ -23,6 +23,8 @@ Route::get('/inventory','ItemController@index');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::resource('item','ItemController');
+Route::get('/item/create','ItemController@create');
+Route::post('/item/store','ItemController@store');
 
 
+//Route::resource('item','ItemController');
