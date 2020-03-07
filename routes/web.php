@@ -19,6 +19,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/profile/{user}','ProfileController@index');
+
 Route::get('/inventory','ItemController@index');
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -28,3 +30,5 @@ Route::post('/item/store','ItemController@store');
 
 
 //Route::resource('item','ItemController');
+
+
